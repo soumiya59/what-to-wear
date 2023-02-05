@@ -14,8 +14,8 @@ yarn dev
 pnpm dev
 ```
 
-2.Open [http://localhost:3000](http://localhost:3000) with your browser.
+2. Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-3.trun on your location 
+3. trun on your location 
 
-4.check out the outfit inspo!
+4. check out the outfit inspo!
