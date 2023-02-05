@@ -26,13 +26,12 @@ export default function App() {
 console.log(data)
 
 return (
-  <div className="App">
-    <div className="container">
-      <div className="card mt-3 mx-auto" style={{ width: '60vw' }}>
+    <div className="container mx-auto">
+      <div className="mt-3 mx-auto flex justify-center font-bold text-3xl" style={{ width: '60vw' }}>
         {data.main ? (
           <div className="card-body text-center">
             <Image
-              src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`} alt="weather status icon" width={200} height={200} />
+              src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`} alt="weather status icon" width={300} height={300} />
             <div className="row mt-4">
                  City Name: {data.name}
                 <p>Temprature: {data.main.temp} &deg;C</p>
@@ -48,7 +47,6 @@ return (
           <h1>Loading</h1>
         )}
       </div>
-    </div>
   </div>
 );
 
