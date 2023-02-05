@@ -1,6 +1,6 @@
 # what-to-wear
 
-A little web app made in  that recommends clothing based on the current weather.
+A little web app that recommends clothing based on the current weather in your city.
 
 ## Getting Started
 
