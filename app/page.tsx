@@ -99,10 +99,10 @@ export default function App() {
     )
   }
   return (
-    <div className="h-screen md:flex" >
+    <div className="h-[60vh] md:h-full min-h-screen  md:flex" >
         {data.main ? (
           <>
-          <div id="left" className="h-[60vh] md:h-screen md:w-2/3 text-3xl pt-8 grid grid-cols-2 gap-4 place-content-between px-10 ">
+          <div id="left" className=" md:w-2/3 pt-8 grid grid-cols-2 gap-4 place-content-between px-10 ">
             <div>
               <p className=" text-7xl mb-5">{time} <span className="text-5xl uppercase">{ampm}</span></p>
               <p>{date}</p>
@@ -115,16 +115,16 @@ export default function App() {
               </div>
               <div className="ml-5">
                 <p>{weatherIcon()}</p>
-                <p className="text-3xl font-semibold">{data.weather[0].description}</p> 
+                <p className="text-3xl font-semibold text-center">{data.weather[0].description}</p> 
               </div>
             </div>
           </div>
 
-          <div id="right" className="md:w-1/3 text-3xl pt-10">
-            <p className="text-center">Recommendations</p>
-            <div className=" text-xl mx-9 mt-8"> {getClothingMsg()} </div>
-            <div className="mx-9 mt-5"> 
-            <p className="mb-8">Outfit inspiration</p>
+          <div id="right" className="md:w-1/3 pt-4 md:pt-10 text-lg">
+            <p className="text-center text-2xl md:text-3xl">Recommendations</p>
+            <div className="md:text-xl mx-9 md:pb-5"> {getClothingMsg()} </div>
+            <div className="mx-9 "> 
+            {/* <p className="text-2xl md:text-3xl">Outfit inspiration</p> */}
             {getoutfit()} </div>
           </div>
           </>
