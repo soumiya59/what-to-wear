@@ -2,6 +2,10 @@
 
 A little web app that recommends clothing based on the current weather in your city.
 
+# Screenshot
+
+![screenshot](./public/screenshot.png)
+
 ## Getting Started
 
 1. run the development server:

@@ -120,10 +120,10 @@ export default function App() {
             </div>
           </div>
 
-          <div id="right" className="md:w-1/3 text-3xl pt-12">
+          <div id="right" className="md:w-1/3 text-3xl pt-10">
             <p className="text-center">Recommendations</p>
             <div className=" text-xl mx-9 mt-8"> {getClothingMsg()} </div>
-            <div className="mx-9 mt-8"> 
+            <div className="mx-9 mt-5"> 
             <p className="mb-8">Outfit insporation</p>
             {getoutfit()} </div>
           </div>
