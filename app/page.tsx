@@ -104,18 +104,18 @@ export default function App() {
           <>
           <div id="left" className=" md:w-2/3 pt-8 grid grid-cols-2 gap-4 place-content-between px-10 ">
             <div>
-              <p className=" text-7xl mb-5">{time} <span className="text-5xl uppercase">{ampm}</span></p>
-              <p>{date}</p>
+              <p className=" text-6xl mb-5">{time} <span className="text-4xl uppercase">{ampm}</span></p>
+              <p className="text-xl">{date}</p>
             </div>
-            <div className="text-4xl lg:text-6xl text-end"> {data.name} </div>
+            <div className="text-4xl lg:text-5xl text-end"> {data.name} </div>
            
-            <div id="temp" className="flex pb-20">
-              <div className="text-7xl md:text-9xl self-center">
+            <div id="temp" className="flex pb-10">
+              <div className="text-6xl md:text-8xl self-center">
                 {Math.floor(data.main.temp)}&deg;
               </div>
-              <div className="ml-5">
+              <div className="ml-4">
                 <p>{weatherIcon()}</p>
-                <p className="text-3xl font-semibold text-center">{data.weather[0].description}</p> 
+                <p className="text-lg md:text-2xl font-semibold text-center  md:-mt-5">{data.weather[0].description}</p> 
               </div>
             </div>
           </div>
