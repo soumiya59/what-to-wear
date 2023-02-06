@@ -102,12 +102,12 @@ export default function App() {
     <div className="h-screen md:flex" >
         {data.main ? (
           <>
-          <div id="left" className="h-[60vh] md:h-screen md:w-2/3 text-3xl pt-8 grid grid-cols-2 gap-4 place-content-between px-9 ">
+          <div id="left" className="h-[60vh] md:h-screen md:w-2/3 text-3xl pt-8 grid grid-cols-2 gap-4 place-content-between px-10 ">
             <div>
               <p className=" text-7xl mb-5">{time} <span className="text-5xl uppercase">{ampm}</span></p>
               <p>{date}</p>
             </div>
-            <div className="text-5xl lg:text-6xl text-end"> {data.name} </div>
+            <div className="text-4xl lg:text-6xl text-end"> {data.name} </div>
            
             <div id="temp" className="flex pb-20">
               <div className="text-7xl md:text-9xl self-center">
@@ -124,7 +124,7 @@ export default function App() {
             <p className="text-center">Recommendations</p>
             <div className=" text-xl mx-9 mt-8"> {getClothingMsg()} </div>
             <div className="mx-9 mt-5"> 
-            <p className="mb-8">Outfit insporation</p>
+            <p className="mb-8">Outfit inspiration</p>
             {getoutfit()} </div>
           </div>
           </>
