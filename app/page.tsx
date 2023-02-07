@@ -95,7 +95,7 @@ export default function App() {
     const path = '/weatherIcons/'+ data.weather[0].description + '.png'
     console.log(path)
     return (
-      <Image src={path} width={200} height={200} alt='icon'/>
+      <Image src={path} width={100} height={100} alt='icon'/>
     )
   }
   return (
@@ -114,8 +114,8 @@ export default function App() {
                 {Math.floor(data.main.temp)}&deg;
               </div>
               <div className="ml-4">
-                <p>{weatherIcon()}</p>
-                <p className="text-lg md:text-2xl font-semibold text-center  md:-mt-5">{data.weather[0].description}</p> 
+                <p className=" px-5">{weatherIcon()}</p>
+                <p className="text-lg md:text-2xl font-semibold text-center ">{data.weather[0].description}</p> 
               </div>
             </div>
           </div>
@@ -130,7 +130,7 @@ export default function App() {
           </>
          ) : 
         <h1 className=" animate-spin flex justify-between mx-auto my-auto items-center" >
-             <Image src={'/load.svg'} width={200} height={200} alt='loading'/>
+             <Image src={'/load.svg'} width={150} height={150} alt='loading'/>
         </h1>
         } 
     </div>

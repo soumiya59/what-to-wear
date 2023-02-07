@@ -8,15 +8,15 @@
   margin: 0;
 }
 #left {
-  background-image: url(/bg6.jpg);
+  background-image: url(/bg5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
-  color: #f1f1e6;
+  color: #d1cacf;
 }
 #right{
-  background-color: #f1f1e6;
-  color :#334b49;
+  background-color: #020d10;
+  color :#d1cacf;
 }
 #right span {
 font-weight: bold;
