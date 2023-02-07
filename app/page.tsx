@@ -104,7 +104,7 @@ export default function App() {
           <>
           <div id="left" className=" md:w-2/3 pt-8 grid grid-cols-2 gap-4 place-content-between px-10 ">
             <div>
-              <p className=" text-6xl mb-5">{time} <span className="text-4xl uppercase">{ampm}</span></p>
+              <p className="text-4xl md:text-6xl mb-5">{time} <span className="text-4xl uppercase">{ampm}</span></p>
               <p className="text-xl">{date}</p>
             </div>
             <div className="text-4xl lg:text-5xl text-end"> {data.name} </div>
