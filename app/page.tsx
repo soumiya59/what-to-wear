@@ -22,7 +22,7 @@ export default function App() {
       await fetch(`https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&units=metric&APPID=15414d5fa969db8c68f73428d0e8dd8a`)
       .then(res => res.json())
       .then(result => {
-        setData(result)
+        // setData(result)
         console.log(result);
       });
     }
@@ -129,9 +129,9 @@ export default function App() {
           </div>
           </>
          ) : 
-        <h1 className=" animate-spin flex justify-between mx-auto my-auto items-center" >
-             <Image src={'/load.svg'} width={150} height={150} alt='loading'/>
-        </h1>
+        <div className="flex justify-between mx-auto my-auto items-center pt-10 sm:pt-0" >
+             <Image src={'/loading.png'} width={100} height={100} alt='loading' className="animate-spin w-1/6 h-1/6 md:h-full md:w-full text-center mx-auto my-auto"/>
+        </div>
         } 
     </div>
   );
