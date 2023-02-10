@@ -22,8 +22,7 @@ export default function App() {
       await fetch(`https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&units=metric&APPID=15414d5fa969db8c68f73428d0e8dd8a`)
       .then(res => res.json())
       .then(result => {
-        // setData(result)
-        console.log(result);
+        setData(result)
       });
     }
     fetchData();
@@ -90,8 +89,6 @@ export default function App() {
     else if (t>=30) return <Image src="/7.jpg" width={800} height={420} alt='outfit'/>
   }
   const weatherIcon = () => {
-    // if(data.weather[0].description=="few clouds") return <Image src="/weatherIcons/few-cloud.gif" width={100} height={100} alt='outfit'/> 
-    // else if (data.weather[0].description=="clear sky") return <Image src="/weatherIcons/clear.png" width={100} height={100} alt='outfit'/> 
     const path = '/weatherIcons/'+ data.weather[0].description + '.png'
     console.log(path)
     return (
