@@ -11,11 +11,8 @@ A little web app that recommends clothing based on the current weather in your c
 1. run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 2. Open [http://localhost:3000](http://localhost:3000) with your browser.
